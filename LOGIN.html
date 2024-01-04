@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+                body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: url()
+        }
+
+        .login-container {
+            background-color: #fff;
+            backdrop-filter: blur(15px);
+            padding: 20px;
+            border-radius:5px;
+            position: relative;
+            box-shadow: 0 0 10px rgba(215, 209, 209, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+
+        }
+        input:invalid{
+            animation:shake 300ms;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #email
+        {
+            border-radius: 18px;
+        }
+        #username
+        {
+            border-radius: 18px;
+        }
+        #password
+        {
+            border-radius: 18px;
+        }
+        .a
+        {
+            text-align:center;
+        }
+        .c
+        {
+            color:black ;
+        }
+    </style>
+   
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="a">Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <a  class="c" href="forgot password?">forgot password?</a>
+
+            <button class="b" type="submit">Login/sigin</button>
+        </form>
+    </div>
+
+</body>
+</html>
